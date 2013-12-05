@@ -1,0 +1,34 @@
+#playfield> .column > .circle {
+	width: 100px;
+	height: 100px;
+	background-image: url('../img/circleBlank.png');
+	background-size: contain;
+	float: left;
+}
+
+#playfield {
+	width: 700px;
+	height: 600px;
+	align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#playfield > .column > .circleRed {
+	background-image: url('../img/circleRed.png');
+}
+
+#playfield >  .column > .circleBlue {
+	background-image: url('../img/circleBlue.png');
+}
+
+#playfield > .column {
+	color: rgb(0, 0, 0);
+	width: 100px;
+	height: 600px;
+	float:left;
+}
+
+#playfield > .column:hover {
+	background-color: rgb(200, 200, 200);
+}
