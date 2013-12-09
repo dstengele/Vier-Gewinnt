@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vier gewinnt!</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
-	<script type="text/javascript" src="js/drawing.js"></script>
+    <title>Vier gewinnt!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="js/drawing.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-	<div id="playfield">
-		<div class="column" id="column1" onclick="putChip(0)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-		<div class="column" id="column2" onclick="putChip(1)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-		<div class="column" id="column3" onclick="putChip(2)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-		<div class="column" id="column4" onclick="putChip(3)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-		<div class="column" id="column5" onclick="putChip(4)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-		<div class="column" id="column6" onclick="putChip(5)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-		<div class="column" id="column7" onclick="putChip(6)">
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-			<div class="circle"></div>
-		</div>
-	</div>
+<h1>Vier Gewinnt</h1>
+<div id="container">
+<div id="playfield">
+    <div class="column" id="column1" onclick="putChip(0)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column2" onclick="putChip(1)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column3" onclick="putChip(2)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column4" onclick="putChip(3)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column5" onclick="putChip(4)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column6" onclick="putChip(5)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="column" id="column7" onclick="putChip(6)">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+    </div>
+<div id="anleitung">
+    <p>
+        Vier Gewinnt ist ein Spiel für zwei Spielerinnen. <br />
+        Die Spielerinnen sind abwechselnd an der Reihe, wer am Zug ist platziert einen Stein in der
+        gewünschten Spalte.<br />
+        Sobald eine Spielerin vier eigene Steine horizontal, vertikal oder diagonal aneinander platziert hat, gewinnt
+        sie. Ist das Spielfeld vollständig gefüllt endet das Spiel unentschieden.<br />
+        Spielzüge können nicht rückgängig gemacht werden.
+    </p>
+</div>
+
+
+<div class="indicatorContainer indicatorContainerLeft">
+    <div id="indicatorBlue"></div><p class="indicatorContainerDescription">Blau ist dran!</p>
+</div>
+<div class="indicatorContainer indicatorContainerRight">
+    <div id="indicatorRed"></div><p class="indicatorContainerDescription">Rot ist dran!</p>
+</div>
+
+<div id="footer">
+    <a href="impressum.html">Impressum</a>
+</div>
 </body>
 </html>
