@@ -73,6 +73,7 @@ function putChip(column) {
     // Erhöhen des Zugzählers
     // Testen ob der aktuelle Spieler gewonnen hat oder das Spielfeld voll ist
     if (checkIfWon()) {
+        $("div.indicatorContainer").hide();
         alert((currentPlayer==="red"?"Rot":"Blau") + " gewinnt!");
         var divs = $("div#playfield div.column")
         divs.prop("onclick", null);
@@ -80,6 +81,7 @@ function putChip(column) {
         // Meldung, wenn Spieler gewonnen hat
     }
     if (movecount === 41) {
+        $("div.indicatorContainer").hide();
         alert("Unentschieden!");
         var divs = $("div#playfield div.column")
         divs.prop("onclick", null);
@@ -98,11 +100,15 @@ function switchPlayer() {
 			currentPlayer = "blue";
 			currentPlayerColor = "circleBlue";
 			otherPlayerColor = "circleRed";
+            $("div.indicatorContainerLeft").show();
+            $("div.indicatorContainerRight").hide();
 			break;
 		case "blue":
 			currentPlayer = "red";
 			currentPlayerColor = "circleRed";
 			otherPlayerColor = "circleBlue";
+            $("div.indicatorContainerLeft").hide();
+            $("div.indicatorContainerRight").show();
 			break;
 	};
 };
