@@ -1,33 +1,29 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto|Ubuntu|Maven+Pro|Press+Start+2P|Droid+Sans|Marvel);
 
 #playfield> .column > .circle {
-	width: 100px;
-	height: 100px;
-	background-image: url('../img/circleBlank.png');
-	background-size: contain;
+	width: 80px;
+	height: 80px;
+	background-color: white;
 	float: left;
     border-radius: 50px;
+    margin: 8px;
+    border: 2px solid black;
+}
+
+#playfield > .column > .circleRed {
+    background-color: #ff0000;
+}
+
+#playfield >  .column > .circleBlue {
+    background-color: #0000ff;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    font-family: 'Maven Pro', sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Maven Pro', sans-serif;
-}
-
-h2 {
-    font-family: 'Maven Pro', sans-serif;
-}
-
-h3 {
-    font-family: 'Maven Pro', sans-serif;
-}
-
-a {
-    font-family: 'Maven Pro', sans-serif;
-}
-
-p {
-    font-family: 'Maven Pro', sans-serif;
 }
 
 div#footer {
@@ -47,19 +43,12 @@ div#footer > a {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-    background-color: hsla(22, 100%, 54%, 0.80);
+    background-color: hsla(41, 100%, 51%, 0.80);
     border: 3px solid black;
     border-radius: 50px;
     z-index: 2;
 }
 
-#playfield > .column > .circleRed {
-	background-image: url('../img/circleRed.png');
-}
-
-#playfield >  .column > .circleBlue {
-	background-image: url('../img/circleBlue.png');
-}
 
 #playfield > .column {
 	width: 100px;
@@ -69,7 +58,7 @@ div#footer > a {
 }
 
 #playfield > .column:hover {
-	background-color: hsl(22, 100%, 54%);
+	background-color: hsl(41, 69%, 35%);
     border-radius: 48px;
 }
 
@@ -77,7 +66,7 @@ div#anleitung {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 div#indicatorRed {
