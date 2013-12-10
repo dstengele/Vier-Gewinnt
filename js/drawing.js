@@ -75,6 +75,7 @@ function putChip(column) {
     if (checkIfWon()) {
         $("div.indicatorContainer").hide();
         alert((currentPlayer==="red"?"Rot":"Blau") + " gewinnt!");
+        $("div#restart").show();
         var divs = $("div#playfield div.column")
         divs.prop("onclick", null);
         return;
@@ -83,6 +84,7 @@ function putChip(column) {
     if (movecount === 41) {
         $("div.indicatorContainer").hide();
         alert("Unentschieden!");
+        $("div#restart").show();
         var divs = $("div#playfield div.column")
         divs.prop("onclick", null);
         return;
